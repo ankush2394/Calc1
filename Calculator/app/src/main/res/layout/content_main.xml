@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F7FE2E"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.admin.calculator.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/LD1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#F00"
+        android:weightSum="3"
+        >
+
+
+
+        <TextView
+            android:layout_width="270dp"
+            android:text="Enter value here"
+            android:textSize="44dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:text="X"
+            android:textSize="30dp"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_below="@+id/LD1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0eF"
+    android:id="@+id/linearLayout2">
+   <LinearLayout
+       android:orientation="vertical"
+       android:id="@+id/LD2"
+       android:layout_below="@+id/LD1"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+
+
+       android:weightSum="3">
+
+
+       <Button
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="+"
+           android:id="@+id/button"
+           android:visibility="visible"
+           android:typeface="normal" />
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="-"
+           android:id="@+id/button2" />
+
+       <Button
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="*"
+           android:id="@+id/button3" />
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="/"
+           android:id="@+id/button4" />
+
+       <Button
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="="
+           android:id="@+id/button5"
+           android:layout_weight="1.49" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+            <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="b1"
+                />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b3"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b2"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
